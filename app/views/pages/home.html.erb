@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<div class="jumbotron">
+	<h1> You are logged in!!</h1>
+</div>
+<% else %>
+<div class="jumbotron">
+	<h1>Welcome to One Month Rails!</h1>
+<p>
+	You've found the home page for the app
+	<%= link_to "One Month Rails", "http://www.google.com"%>
+</p>
+<p>
+	<%= link_to "Sign Up Now!", new_user_registration_path, class:"btn btn-primary btn-lg" %>
+</p>
+</div>
+<% end %>
